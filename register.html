@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your QR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Container -->
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden flex w-2/3">
+
+            <!-- Image Section -->
+            <div class="w-1/2 bg-gray-50 flex items-center justify-center">
+                <img src="https://placehold.co/600x400" alt="Illustration of business people working with QR creation" class="w-3/4 h-auto">
+            </div>
+
+            <!-- Form Section -->
+            <div class="w-1/2 p-12">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">Create your QR</h2>
+
+                <!-- Form -->
+                <form action="#">
+                    <!-- Business Name -->
+                    <div class="mb-4">
+                        <label for="businessName" class="block text-gray-600"><i class="fas fa-briefcase"></i> Enter your Business Name</label>
+                        <input type="text" id="businessName" class="w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your Business Name">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-600"><i class="fas fa-envelope"></i> Enter your Email</label>
+                        <input type="email" id="email" class="w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your Email">
+                    </div>
+
+                    <!-- Business Link -->
+                    <div class="mb-4">
+                        <label for="businessLink" class="block text-gray-600"><i class="fas fa-link"></i> Enter your Business Link</label>
+                        <input type="url" id="businessLink" class="w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your Business Link">
+                    </div>
+
+                    <!-- Contact Number -->
+                    <div class="mb-4">
+                        <label for="contactNumber" class="block text-gray-600"><i class="fas fa-phone"></i> Enter your Contact Number</label>
+                        <input type="tel" id="contactNumber" class="w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your Contact Number">
+                    </div>
+
+                    <!-- Serial ID & Plan Selection -->
+                    <div class="flex space-x-4 mb-4">
+                        <!-- Serial ID -->
+                        <div class="w-1/2">
+                            <label for="serialId" class="block text-gray-600"><i class="fas fa-list"></i> Select a Serial ID</label>
+                            <select id="serialId" class="w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select a Serial ID</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+
+                        <!-- Serial ID Prefix -->
+                        <div class="w-1/2">
+                            <label for="serialPrefix" class="block text-gray-600">Serial ID Must Start With</label>
+                            <input type="text" id="serialPrefix" class="w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Serial Prefix">
+                        </div>
+                    </div>
+
+                    <!-- Preferred Plan -->
+                    <div class="mb-4">
+                        <label for="preferredPlan" class="block text-gray-600"><i class="fas fa-dollar-sign"></i> Select Your Preferred Plan</label>
+                        <select id="preferredPlan" class="w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Select Your Preferred Plan</option>
+                            <!-- Add more plan options -->
+                        </select>
+                    </div>
+
+                    <!-- Register Button -->
+                    <div class="mb-4">
+                        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300">Register</button>
+                    </div>
+
+                    <!-- Privacy Policy -->
+                    <div class="flex items-center text-sm">
+                        <input type="checkbox" id="privacyPolicy" class="mr-2">
+                        <label for="privacyPolicy" class="text-gray-600">Our Privacy Policy <a href="#" class="text-blue-500">Privacy-Policy</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

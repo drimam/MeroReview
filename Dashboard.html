@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Sidebar -->
+    <div class="flex min-h-screen">
+        <aside class="w-1/5 bg-white shadow-md">
+            <div class="p-4">
+                <h1 class="text-2xl font-bold text-blue-600"><i class="fas fa-code"></i>MeroReview</h1>
+            </div>
+            <nav class="mt-6">
+                <ul>
+                    <li class="flex items-center space-x-3 py-3 pl-6 hover:bg-blue-50 cursor-pointer">
+                        <i class="fas fa-tachometer-alt text-gray-500"></i>
+                        <span>Dashboard</span>
+                    </li>
+                    <li class="flex items-center space-x-3 py-3 pl-6 hover:bg-blue-50 cursor-pointer">
+                        <i class="fas fa-thumbs-down text-gray-500"></i>
+                        <span>My Negative Reviews</span>
+                    </li>
+                    <li class="flex items-center space-x-3 py-3 pl-6 hover:bg-blue-50 cursor-pointer">
+                        <i class="fas fa-history text-gray-500"></i>
+                        <span>Order History</span>
+                    </li>
+                    <li class="flex items-center space-x-3 py-3 pl-6 hover:bg-blue-50 cursor-pointer">
+                        <i class="fas fa-cog text-gray-500"></i>
+                        <span>Account Settings</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="px-6 mt-8">
+                <div class="bg-gray-100 p-4 rounded-md">
+                    <img src="https://placehold.co/80x80" alt="Upgrade Plan Image" class="mb-4">
+                    <h2 class="text-lg font-bold">Upgrade Your Plan</h2>
+                    <p class="text-blue-500 cursor-pointer">Go to PRO</p>
+                </div>
+                <button class="bg-green-500 text-white px-4 py-2 rounded-md w-full mt-4">Support Form</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md w-full mt-4">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <!-- Top bar -->
+            <div class="flex justify-between items-center mb-6">
+                <div class="text-2xl font-bold">Dashboard</div>
+                <div class="relative flex items-center">
+                    <input type="text" placeholder="Search..." class="border border-gray-300 rounded-full px-4 py-2 mr-4 focus:outline-none">
+                    <i class="fas fa-search absolute right-8 top-2 text-blue-600"></i>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Download CSV</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Content Boxes -->
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Last Month Reviews -->
+                <div class="bg-white p-6 rounded-lg shadow-md col-span-2">
+                    <div class="flex justify-between items-center">
+                        <div class="text-lg font-bold">Last Month Reviews</div>
+                        <i class="fas fa-calendar-alt text-blue-600"></i>
+                    </div>
+                </div>
+
+                <!-- Overall Reviews -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center">
+                        <div class="text-lg font-bold">1 Overall Reviews</div>
+                        <i class="fas fa-chart-line text-blue-600"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Reviews Section -->
+            <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="text-lg font-bold">Recent Reviews</div>
+                    <i class="fas fa-filter text-gray-500 cursor-pointer"></i>
+                </div>
+                <table class="w-full text-left">
+                    <thead>
+                        <tr>
+                            <th class="pb-2">User</th>
+                            <th class="pb-2">Review Date</th>
+                            <th class="pb-2">Rating</th>
+                            <th class="pb-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-2 flex items-center space-x-2">
+                                <img src="https://placehold.co/40x40" alt="User image" class="rounded-full">
+                                <span>Rahul Kumar</span>
+                            </td>
+                            <td class="py-2">26-08-2024 11:43:33 AM</td>
+                            <td class="py-2">2</td>
+                            <td class="py-2">
+                                <span class="bg-red-500 text-white px-2 py-1 rounded-full text-sm">Negative</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Reminders Section -->
+            <div class="mt-6 grid grid-cols-1">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-lg font-bold">Reminders</div>
+                        <i class="fas fa-filter text-gray-500 cursor-pointer"></i>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>Analyse Reviews</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>Analyse Our Site</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-times-circle text-red-500"></i>
+                            <span>Feedback Analysis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // JavaScript placeholder for future interactivity
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Button clicked! Implement the functionality.');
+            });
+        });
+    </script>
+</body>
+</html>

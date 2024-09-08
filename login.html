@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MeroReview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <!-- Main container -->
+    <div class="bg-white shadow-lg rounded-lg flex overflow-hidden max-w-4xl w-full">
+
+        <!-- Left side illustration -->
+        <div class="w-1/2 bg-blue-50 p-8 flex justify-center items-center">
+            <img src="https://placehold.co/400x400" alt="Illustration of data analytics and business review" class="max-w-full">
+        </div>
+
+        <!-- Right side login form -->
+        <div class="w-1/2 p-8">
+            <h2 class="text-xl font-semibold mb-2">Welcome Back!</h2>
+            <h3 class="text-2xl font-bold mb-8">Login Your MeroReview Account</h3>
+
+            <!-- Username Input -->
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 text-sm mb-2"><i class="fas fa-user mr-2"></i>Username</label>
+                <input type="text" id="username" class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your username">
+            </div>
+
+            <!-- Password Input -->
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm mb-2"><i class="fas fa-lock mr-2"></i>Password</label>
+                <input type="password" id="password" class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your password">
+            </div>
+
+            <!-- Remember me and Forgot Password -->
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center">
+                    <input type="checkbox" id="remember_me" class="mr-2">
+                    <label for="remember_me" class="text-sm text-gray-700">Remember Me</label>
+                </div>
+                <a href="#" class="text-sm text-blue-500 hover:underline">Forget Password?</a>
+            </div>
+
+            <!-- Sign In Button -->
+            <button id="sign_in" class="w-full bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700 transition duration-200">Sign In</button>
+
+            <!-- Privacy Policy Links -->
+            <p class="mt-4 text-center text-sm text-gray-500">Our Privacy Policy <a href="#" class="text-blue-500 hover:underline">Privacy-Policy</a></p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Click Events -->
+    <script>
+        document.getElementById('sign_in').addEventListener('click', () => {
+            alert('Sign In button clicked! Add functionality here.');
+        });
+
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                alert('Link clicked! Add link functionality here.');
+            });
+        });
+    </script>
+</body>
+</html>
